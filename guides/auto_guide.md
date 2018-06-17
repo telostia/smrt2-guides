@@ -47,7 +47,7 @@ Linux VPS setup
 Log into your linux Vps and type each commands each number lines:
 
 1. cd
-2. wget https://raw.githubusercontent.com/telostia/SmartSpaceCoin/master/guides/smart_auto.sh 
+2. wget https://raw.githubusercontent.com/telostia/smrt2-guides/master/guides/smart_auto.sh
 3. bash smart_auto.sh 
 
 when asked to paste genekey. right click to paste your genkey in.
