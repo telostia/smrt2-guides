@@ -2,4 +2,4 @@
 -----------------------------------------------------------------------
 
 ### Masternode Installation
-* [SmartSpace Linux MasterNode Hot Wallet & Windows Cold Wallet Install Guide](guides/auto-guide.md)
+* [SmartSpace Linux MasterNode Hot Wallet & Windows Cold Wallet Install Guide](guides/auto_guide.md)
