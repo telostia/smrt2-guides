@@ -78,10 +78,10 @@ from: Settings - Options - Wallet - Show Masternodes Tab
 11.   Click Update status to see your node. If it is not shown, close the wallet and 
 start it again. Make sure the wallet is unlocked. 
 12.   Open Debug Console and type: 
-masternode start-alias [alias] 
+masternode start-alias 0 [alias] 
 
 sample for mn1:
-masternode start-alias mn1
+masternode start-alias 0 mn1
 
 Complete! Thank you for joining the revival smart coin.
 
