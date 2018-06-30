@@ -165,17 +165,17 @@ masternode start-alias 0 mn1
 do steps 8 to 12 again but changing to 2nd txhash,genkey stored earlier and alias.
 add another line onto masternode.conf like this:
 
-mn1 VPS_IP1:PORT GENKEY1 TXHASH1 OUTPUTS_NDEX1
-mn2 VPS_IP2:PORT GENKEY2 TXHASH2 OUTPUTS_INDEX2
-mn3 VPS_IP3:PORT GENKEY3 TXHASH3 OUTPUTS_INDEX3
-mn4 VPS_IP4:PORT GENKEY4 TXHASH4 OUTPUTS_INDEX4
+* mn1 VPS_IP1:PORT GENKEY1 TXHASH1 OUTPUTS_NDEX1
+* mn2 VPS_IP2:PORT GENKEY2 TXHASH2 OUTPUTS_INDEX2
+* mn3 VPS_IP3:PORT GENKEY3 TXHASH3 OUTPUTS_INDEX3
+* mn4 VPS_IP4:PORT GENKEY4 TXHASH4 OUTPUTS_INDEX4
 
 sample masternode.conf:(note that port number remains the same for all masternodes)
 
-mn1 144.0.1.1:52310 13720437070f0df70dsf70dsf7007f1 f1d0f70fd707f07ds07f0s70fsd077f07dsa07f 1
-mn2 144.0.1.2:52310 23720437070f0df70dsf70dsf7007f2 f2d0f70fd707f07ds07f0s70fsd077f07dsa07f 0
-mn3 144.0.1.3:52310 33720437070f0df70dsf70dsf7007f3 f3d0f70fd707f07ds07f0s70fsd077f07dsa07f 1
-mn4 144.0.1.4:52310 43720437070f0df70dsf70dsf7007f4 f4d0f70fd707f07ds07f0s70fsd077f07dsa07f 0
+* mn1 144.0.1.1:52310 13720437070f0df70dsf70dsf7007f1 f1d0f70fd707f07ds07f0s70fsd077f07dsa07f 1
+* mn2 144.0.1.2:52310 23720437070f0df70dsf70dsf7007f2 f2d0f70fd707f07ds07f0s70fsd077f07dsa07f 0
+* mn3 144.0.1.3:52310 33720437070f0df70dsf70dsf7007f3 f3d0f70fd707f07ds07f0s70fsd077f07dsa07f 1
+* mn4 144.0.1.4:52310 43720437070f0df70dsf70dsf7007f4 f4d0f70fd707f07ds07f0s70fsd077f07dsa07f 0
 
 
 Complete! Thank you for joining the revival smart coin - smart cloud. For typos, further enquiries or any other enquiries please see the discord channel.
