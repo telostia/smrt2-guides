@@ -74,14 +74,14 @@ the command to copy is as follows:
 * cp -r -p /root/.smrt /root/.smrt4
 
 Now delete the 2nd,3rd and 4th peers.dat and wallet.dat as its recommended to have these files uninque.
-rm /root/.smrt2/peers.dat
-rm /root/.smrt2/wallet.dat
+* rm /root/.smrt2/peers.dat
+* rm /root/.smrt2/wallet.dat
 
-rm /root/.smrt3/peers.dat
-rm /root/.smrt3/wallet.dat
+* rm /root/.smrt3/peers.dat
+* rm /root/.smrt3/wallet.dat
 
-rm /root/.smrt4/peers.dat
-rm /root/.smrt4/wallet.dat
+* rm /root/.smrt4/peers.dat
+* rm /root/.smrt4/wallet.dat
 
 Editing the config files to make it unique.
 
