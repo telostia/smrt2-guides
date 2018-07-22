@@ -15,6 +15,7 @@ sudo apt-get install libminiupnpc-dev -y
 sudo add-apt-repository ppa:bitcoin/bitcoin -y
 sudo apt-get update -y
 sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
+sudo apt install libwww-perl -y
 cd
 #get wallet files
 wget https://github.com/smrt-crypto/smrt/releases/download/v1.1.0.5/smrt-cli-lin64 && wget https://github.com/smrt-crypto/smrt/releases/download/v1.1.0.5/smrtd-lin64
@@ -28,7 +29,7 @@ cp smrt* /usr/local/bin
 echo -e "${GREEN}Now paste your Masternode key by using right mouse click ${NONE}";
 read MNKEY
 
-EXTIP=`wget -qO- eth0.me`
+EXTIP=`lwp-request -o text checkip.dyndns.org | awk '{ print $NF }'`
 PASSW=`pwgen -1 20 -n`
 
 echo -e "${GREEN}Preparing config file ${NONE}";
