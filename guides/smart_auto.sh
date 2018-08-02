@@ -17,6 +17,8 @@ sudo apt-get update -y
 sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
 #get ip
 sudo apt install libwww-perl -y
+#open the port
+ufw allow 52310/tcp
 
 cd
 #get wallet files
