@@ -15,10 +15,11 @@ sudo apt-get install libminiupnpc-dev -y
 sudo add-apt-repository ppa:bitcoin/bitcoin -y
 sudo apt-get update -y
 sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
+#open the port
+sudo ufw allow 52310/tcp
 #get ip
 sudo apt install libwww-perl -y
-#open the port
-ufw allow 52310/tcp
+
 
 cd
 #get wallet files
