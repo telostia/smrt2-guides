@@ -47,7 +47,7 @@ now move on to linux vps setup.
 Log into your linux Vps and copy the following command and press enter:
 
 
-*cd && bash -c "$(wget -O - https://raw.githubusercontent.com/telostia/smrt2-guides/master/guides/smart_auto.sh)"
+* cd && bash -c "$(wget -O - https://raw.githubusercontent.com/telostia/smrt2-guides/master/guides/smart_auto.sh)"
 
 when asked to paste genekey. right click to paste your genkey in and press enter.
 
