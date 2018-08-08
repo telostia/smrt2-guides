@@ -17,9 +17,6 @@ sudo apt-get update -y
 sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
 #open the port
 sudo ufw allow 52310/tcp
-#get ip
-sudo apt install libwww-perl -y
-
 
 cd
 #get wallet files
@@ -34,16 +31,15 @@ rm smrtd smrt-cli
 echo -e "${GREEN}Now paste your Masternode key by using right mouse click ${NONE}";
 read MNKEY
 
-EXTIP=`lwp-request -o text checkip.dyndns.org | awk '{ print $NF }'`
+EXTIP=`curl -s4 icanhazip.com`
 PASSW=`pwgen -1 20 -n`
 
 echo -e "${GREEN}Preparing config file ${NONE}";
 
 sudo mkdir $HOME/.smrt
 
-printf "addnode=178.128.160.143:52310\naddnode=188.166.209.139:52310\naddnode=45.77.52.239:52310\naddnode=31.171.251.72:52310\naddnode=167.99.70.168:52310\naddnode=144.202.78.25:52310\naddnode=149.28.37.210:52310\naddnode=74.108.58.91:52310\naddnode=206.189.186.158:52310\naddnode=107.174.250.215:52310\n\nrpcuser=smartuser\nrpcpassword=$PASSW\nrpcport=52311\nrpcallowip=127.0.0.1\ndaemon=1\nlisten=1\nserver=1\nmaxconnections=256\nexternalip=$EXTIP:52310\nmasternode=1\nmasternodeprivkey=$MNKEY" >  $HOME/.smrt/smrt.conf
+printf "addnode=139.99.172.22:52310\naddnode=147.135.248.145:52310\naddnode=159.203.28.197:52310\naddnode=178.128.160.143:52310\naddnode=188.166.209.139:52310\naddnode=45.77.52.239:52310\naddnode=31.171.251.72:52310\naddnode=167.99.70.168:52310\naddnode=144.202.78.25:52310\naddnode=149.28.37.210:52310\naddnode=74.108.58.91:52310\naddnode=206.189.186.158:52310\naddnode=107.174.250.215:52310\n\nrpcuser=smartuser\nrpcpassword=$PASSW\nrpcport=52311\nrpcallowip=127.0.0.1\ndaemon=1\nlisten=1\nserver=1\nmaxconnections=256\nexternalip=$EXTIP:52310\nmasternode=1\nmasternodeprivkey=$MNKEY" >  $HOME/.smrt/smrt.conf
 
-
-smrtd -daemon
+smrtd
 watch smrt-cli getinfo
 
